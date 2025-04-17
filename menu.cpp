@@ -1,5 +1,6 @@
 #include <iostream>
 #include "menu.h"
+#include "tareas.h"
 
 using std::cout;
 using std::endl;
