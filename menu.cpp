@@ -31,8 +31,8 @@ void Menu::mostrar_menu() {
                 Tareas::mostrar_tareas(Tareas::tareas);
                 cout << "Ingrese el numero de tarea a eliminar: ";
                 cin >> Tareas::indice;
-                cin.ignore();
                 Tareas::eliminar_tarea(Tareas::tareas, Tareas::indice);
+                cin.ignore();
                 break;
             case 3:
                 Tareas::mostrar_tareas(Tareas::tareas);

@@ -16,7 +16,7 @@ namespace Tareas {
         cout << "Tarea agregada con exito" << endl;
     } 
     void eliminar_tarea(std::vector<std::string> &tareas, int &indice) {
-        if (indice > 0 && indice < tareas.size()){
+        if (indice > 0 && indice <= tareas.size()){
             tareas.erase(tareas.begin() + (indice - 1));
             cout << "Tarea eliminada con exito" << endl;
 
