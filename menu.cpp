@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include "menu.h"
 #include "tareas.h"
 
@@ -18,13 +19,23 @@ void Menu::mostrar_menu() {
         cout << "--------------------" << endl;
         cout << "Ingrese una opcion (1-4): ";
         cin >> opcion;
+        cin.ignore();
 
         switch (opcion) {
             case 1:
+                cout << "Ingrese su tarea: ";
+                std::getline(cin, Tareas::titulo);
+                Tareas::agregar_tarea(Tareas::tareas, Tareas::titulo);
                 break;
             case 2:
+                Tareas::mostrar_tareas(Tareas::tareas);
+                cout << "Ingrese el numero de tarea a eliminar: ";
+                cin >> Tareas::indice;
+                cin.ignore();
+                Tareas::eliminar_tarea(Tareas::tareas, Tareas::indice);
                 break;
             case 3:
+                Tareas::mostrar_tareas(Tareas::tareas);
                 break;
             case 4:
                 cout << "See you later..." << endl;
@@ -32,7 +43,6 @@ void Menu::mostrar_menu() {
             default:
                 cout << "Ingrese una opcion valida" << endl;
                 break;
-        
         }                             
     }
 }

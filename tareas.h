@@ -7,6 +7,7 @@
 namespace Tareas {
     extern std::vector<std::string> tareas;
     extern std::string titulo;
+    extern int indice;
 
     void agregar_tarea(std::vector<std::string>& tareas, std::string& titulo);
     void eliminar_tarea(std::vector<std::string>& tareas, int& indice);

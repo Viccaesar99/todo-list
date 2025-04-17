@@ -1,6 +1,6 @@
 TARGET = todo
 
-SRCS = main.cpp menu.cpp
+SRCS = main.cpp menu.cpp tareas.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 

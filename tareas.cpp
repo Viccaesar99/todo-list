@@ -9,6 +9,7 @@ using std::endl;
 namespace Tareas {
     std::vector<std::string> tareas;
     std::string titulo;
+    int indice;
 
     void agregar_tarea(std::vector<std::string> &tareas, std::string &titulo) {
         tareas.push_back(titulo);
