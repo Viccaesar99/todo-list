@@ -2,7 +2,7 @@
 
 #### Como ejecutar
 
-Para ejecutar haga in clon del repositorio
+Para ejecutar haga un clon del repositorio
 
 ` git clone https://github.com/Viccaesar99/todo-list.git `
 
